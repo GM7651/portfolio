@@ -1,30 +1,46 @@
+"use client";
+import { useEffect } from "react"; // Import useEffect from React
+
 import Image from "next/image";
 import Skills from '../components/skills';
 import Projects from '../components/projects';
 import ContactForm from '../components/contactform';
 
+function Home() {
+  useEffect(() => {
+    // Add smooth scrolling to links
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        targetElement.scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  }, []);
 
 
-
-export default function Home() {
   return (
     <div className = "relative flex flex-col items-center max-w-screem-xl px-4 mx-autoo md:f;ex-row sm:px-6 p-8">
       <div className = "flex items-center py-5 md:w-1/2 md:pb-10 md:pr-10">
         <div className = "text-center">
           
-        <nav className="sticky top-0 mb-4 w-full bg-white shadow-lg z-50">
-          <ul className = "flex flex-row space-x-4">
-            <li><a className="md:p-4 py-3 px-0 block" href ="/">About </a></li>
-            <li><a className="md:p-4 py-3 px-0 block" href ="/">Skills </a></li>
-            <li><a className="md:p-4 py-3 px-0 block" href ="/">Projects </a></li>
-            <li><a className="md:p-4 py-3 px-0 block" href ="/">Contact Me </a></li>
-
-          </ul>
+        <div className="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+        <nav>
+            <ul className="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+                <li><a className="md:p-4 py-3 px-0 block" href="#skills">Skills</a></li>
+                <li><a className="md:p-4 py-3 px-0 block" href="#projects">Projects</a></li>
+                <li><a className="md:p-4 py-3 px-0 block" href="#">Resume</a></li>
+                <li><a className="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="#contact">Contact Me</a></li>
+            </ul>
         </nav>
+    </div>
 
 
-
-          <h2 className = "text=4xl mb-32 font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">
+          <h2 className = "text=4xl mt-8 mb-32 font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">
               Geri Mato 
               <div className ="font-bold mt-2 text-blue-500 mb-6"> Full-Stack Developer</div>
           </h2>
@@ -38,17 +54,23 @@ export default function Home() {
           continuously improving my technical skills.
 
           </p>
-          <Skills />
-
+          <div id="skills">
+            <Skills />
+          </div>
         </div>
 
       </div>
+      <div id= "projects">
             <Projects />
-
+</div>
+      <div id="contact">
             <ContactForm />
+            </div>
     </div>
 
  
 
   );
 }
+
+export default Home;
