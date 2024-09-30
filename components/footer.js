@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 function Footer() {
   return (
-    <footer class="flex py-4 flex-col space-y-10 justify-center m-10">
+    <footer className="flex py-4 flex-col space-y-10 justify-center m-10">
 
     
 
@@ -28,7 +28,7 @@ function Footer() {
     />
   </a>
 </div>
-    <p class="text-center text-gray-700 font-medium"></p>
+    <p className="text-center text-gray-700 font-medium"></p>
 </footer>
   )
 }

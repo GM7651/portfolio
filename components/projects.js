@@ -51,8 +51,9 @@ const Projects = () => {
               />
               <h3 className='text-lg md:text-xl font-semibold py-2 text-center'>{project.title}</h3>
               <Link href={project.link}>
-                <div className='block text-center text-[#5651e5] underline py-2'>View Project</div>
-              </Link>
+              <button className="bg-blue-500 ml-24 hover:bg-blue-700 text-white font-bold py-2 px-4  border-blue-700 rounded transform transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-110">
+              View Project
+                </button>              </Link>
               <div className='flex justify-center space-x-6 mt-4'>
                 {project.techIcons.map((icon, i) => (
                   <Image 
