@@ -11,19 +11,19 @@ export default function Home() {
 
     <img className="float-right w-44 rounded-full" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxMXx8aGVhZHNob3R8ZW58MHwxfHx8MTY5MDI3MTY4Nnww&ixlib=rb-4.0.3&q=80&w=1080" />
 
-    <p className="text-lg dark:text-neutral-200">Thanks for dropping by! My name’s Aleksandr—and yes, that’s spelled without
+    <p className="text-lg dark:text-neutral-200">Thanks for dropping by! My name&apos;s Aleksandr—and yes, that&apos;s spelled without
       an <kbd className="rounded bg-neutral-200/50 p-1">e</kbd> between the
       <kbd className="rounded bg-neutral-200/50 p-1">d</kbd> and the <kbd className="rounded bg-neutral-200/50 p-1">r</kbd>,
-      pronounced just like Alexander. Don’t worry about my last name, though; it’s quite long, and most people butcher
+      pronounced just like Alexander. Don&apos;t worry about my last name, though; it&apos;s quite long, and most people butcher
       it anyway.</p>
 
-    <p className="mt-10 text-lg dark:text-neutral-200">Speaking of last names, if mine hasn’t already betrayed me, I was
+    <p className="mt-10 text-lg dark:text-neutral-200">Speaking of last names, if mine hasn&apos;t already betrayed me, I was
       originally born in Armenia, a beautiful country nestled between Europe, Asia, and a bunch of biblically old
       mountains. You can almost spot it on a world map if you squint hard enough.</p>
 
     <p className="mt-10 text-lg dark:text-neutral-200">Long story short, I moved to the U.S. when I was little and have
       lived in the states for most of my life. I currently reside in Florida, home to plenty of friendly gators,
-      lovebugs whose carcasses will eat away at your car’s paint, and the infamous Florida Man.</p>
+      lovebugs whose carcasses will eat away at your car&apos;s paint, and the infamous Florida Man.</p>
 
     <section className="mt-12">
       <h2 className="text-3xl font-bold dark:text-white">Work Experience</h2>
@@ -158,11 +158,11 @@ export default function Home() {
 
     <section className="mt-12">
       <h2 className="text-3xl font-bold dark:text-white">So, Yeah... That's Me!</h2>
-      <p className="mt-6 text-lg dark:text-neutral-200">Anyway, this is probably a good place to stop. There’s more to my
-        life than what I feel comfortable sharing here, but that’s about the gist of my background and interests. If you
-        made it this far, cool! You’re still awake! Maybe we can chat sometime and get to know each other.</p>
-      <p className="mt-6 text-lg dark:text-neutral-200">At the end of the day, I’m just a Real Human Bean who enjoys doing
-        real human things. If that sounds like your cup of tea, get in touch—I’d love to hear from you!</p>
+      <p className="mt-6 text-lg dark:text-neutral-200">Anyway, this is probably a good place to stop. There&apos;s more to my
+        life than what I feel comfortable sharing here, but that&apos;s about the gist of my background and interests. If you
+        made it this far, cool! You&apos;re still awake! Maybe we can chat sometime and get to know each other.</p>
+      <p className="mt-6 text-lg dark:text-neutral-200">At the end of the day, I&apos;m just a Real Human Bean who enjoys doing
+        real human things. If that sounds like your cup of tea, get in touch—I&apos;d love to hear from you!</p>
     </section>
   </article>
 
