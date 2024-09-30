@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 function Footer() {
   return (
@@ -6,22 +7,24 @@ function Footer() {
 
     
 
-    <div className="flex justify-center space-x-5">
+<div className="flex justify-center space-x-5">
   <a href="https://www.linkedin.com/in/gerimato/" target="_blank" rel="noopener noreferrer" className="inline-block">
-    <img
+    <Image
       src="https://img.icons8.com/fluent/30/000000/linkedin-2.png"
       alt="LinkedIn"
-      className="w-8 h-8" 
+      width={30}
+      height={30}
+      className="shadow-lg "
     />
   </a>
 
- 
-
   <a href="mailto:gerimato123@gmail.com" className="inline-block">
-    <img
+    <Image
       src="https://img.icons8.com/fluent/30/000000/email-open.png"
       alt="Email"
-      className="w-8 h-8"
+      width={30}
+      height={30}
+      className="shadow-lg "
     />
   </a>
 </div>
