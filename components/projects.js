@@ -34,11 +34,11 @@ const projectData = [
 const Projects = () => {
   return (
     <div id='projects' className='w-full'>
-      <div className='max-w-[1240px] mx-auto px-4 py-16'>
-        <p className='text-xl tracking-widest -mt-24 uppercase text-[#5651e5] text-center'>
+      <div className='max-w-[1240px] mx-auto px-4 py-20'>
+        <p className='text-xl text-center tracking-widest mt-8 uppercase text-[#5651e5]'>
           Projects
         </p>
-        <h2 className='py-4 text-center text-2xl md:text-3xl font-bold'>What I&apos;ve Built</h2>
+        <h2 className='py-4 text-center text-xl '>What I've Built</h2>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8'>
           {projectData.map((project, index) => (
             <div key={index} className='p-6 shadow-lg hover:shadow-2xl rounded-xl hover:scale-105 ease-in duration-300'>
