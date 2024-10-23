@@ -2,10 +2,12 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from "next/image";
-import Skills from '../components/skills';
-import Projects from '../components/projects';
-import ContactForm from '../components/contactform';
-import Footer from '../components/footer';
+import Skills from './components/skills';
+import Projects from './components/projects';
+import ContactForm from './components/contactform';
+import Footer from './components/footer';
+import Navbar from './components/Navbar'; // Ensure this path is correct
+
 
 const useTypingEffect = (text, duration, isTypeByLetter = false) => {
   const [currentPosition, setCurrentPosition] = useState(0);
@@ -87,29 +89,7 @@ function Home() {
 
   return (
     <div className="relative overflow-x-hidden flex flex-col items-center max-w-screen-xl px-4 mx-auto sm:px-6 py-8">
-      {/* Navbar */}
-      <div className="w-full flex justify-between items-center py-5 md:w-full">
-        <button 
-          className="md:hidden block focus:outline-none"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {/* Hamburger Icon */}
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
-          </svg>
-        </button>
-
-        <div className={`md:flex md:items-center w-full md:w-auto ${isMenuOpen ? "block" : "hidden"}`}>
-          <nav>
-            <ul className="md:flex items-center justify-between text-base text-gray-700">
-              <li><a className="md:p-4 py-3 px-0 block" href="#skills">Skills</a></li>
-              <li><a className="md:p-4 py-3 px-0 block" href="#projects">Projects</a></li>
-              <li><a className="md:p-4 py-3 px-0 block" href="#">Resume</a></li>
-              <li><a className="md:p-4 py-3 px-0 block" href="#contact">Contact Me</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
+      <Navbar />
 
       {/* Header Section */}
       <div className="text-center py-10">
