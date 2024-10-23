@@ -4,30 +4,36 @@ import React from 'react';
 
 const projectData = [
   {
-    title: 'Project One',
-    imgSrc: '/assets/project 1.png',
-    link: 'https://carwash-lac.vercel.app/',
+    title: 'Shinecityautospa',
+    imgSrc: '/assets/shine_project.png',
+    link: 'https://shinecityautospa.com/',
     techIcons: ['/skills/html.png', '/skills/javascript.png', '/skills/tailwind.png'], // Example tech for Project One
     githubLink: 'https://github.com/GM7651/carwash/tree/main/carwash', // Add GitHub link
 
   },
   {
     title: 'Project Two',
-    imgSrc: '/assets/project 2.png',
-    link: '/project-two',
-    techIcons: ['/skills/html.png', '/skills/javascript.png','/skills/css.png','/skills/aws.png'], // No Tailwind for Project Two
+    imgSrc: '/assets/moller_project.png',
+    link: 'https://mollerz.vercel.app/',
+    techIcons: ['/skills/html.png', '/skills/javascript.png','/skills/tailwind.png'], // No Tailwind for Project Two
+    githubLink: 'https://github.com/GM7651/testagain', // Add GitHub link
+
   },
   {
     title: 'Project Three',
-    imgSrc: '/path/to/project3-image.jpg',
-    link: 'https://carwash-lac.vercel.app/',
+    imgSrc: '/assets/dash_project.png',
+    link: 'https://dashboard-phi-three-46.vercel.app/',
     techIcons: ['/skills/html.png', '/skills/javascript.png', '/skills/tailwind.png'], 
+    githubLink: 'https://github.com/GM7651/Dashboard', // Add GitHub link
+
   },
   {
-    title: 'Project Four',
-    imgSrc: '/path/to/project4-image.jpg',
-    link: '/project-four',
+    title: 'Project Three',
+    imgSrc: '/assets/dash_project.png',
+    link: 'https://dashboard-phi-three-46.vercel.app/',
     techIcons: ['/skills/html.png', '/skills/javascript.png', '/skills/tailwind.png'], 
+    githubLink: 'https://github.com/GM7651/Dashboard', // Add GitHub link
+
   },
 ];
 
