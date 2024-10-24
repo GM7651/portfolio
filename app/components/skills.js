@@ -6,7 +6,7 @@ export default function Skills() {
 
 <div id='skills' className='w-full lg:h-screen p-2'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
-        <p className='text-xl text-center tracking-widest mt-8 uppercase text-[#5651e5]'>
+        <p className='text-4xl text-center tracking-widest mt-8 uppercase text-[#5651e5]'>
           Skills
         </p>
         <h2 className='py-4 text-center text-xl'>What I Can Do</h2>

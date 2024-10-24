@@ -117,6 +117,15 @@ const Resume = () => {
         </div>
 
 
+        <div className="mb-4 flex justify-between">
+          <div>
+          <strong>Appointment Dashboard</strong> - <a href="https://dashboard-phi-three-46.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-blue-600 shadow-lg border hover:text-blue-800 font-semibold">Link</a>
+            <p>Role: Full-Stack Developer</p>
+            <p>Developed a comprehensive personal portfolio website leveraging Next.js and JavaScript, showcasing my skills and projects.</p>
+          </div>
+          <div>Date: May 2024 - Present</div>
+        </div>
+
       <h2 className="text-2xl font-semibold mt-8 mb-4">Work Experience</h2>
       <div className="mb-4 flex justify-between">
         <div>
@@ -133,6 +142,14 @@ const Resume = () => {
         </div>
       </div>
       <div className="mb-4 flex justify-between">
+        <div>
+          <strong>Data Collection Intern</strong> - Enterprise Technology Research, Brooklyn, NY
+          <p>June - Sep. 2018</p>
+          <p>Managed a database of 400 potential clients using Microsoft Excel.</p>
+        </div>
+      </div>
+
+       <div className="mb-4 flex justify-between">
         <div>
           <strong>Data Collection Intern</strong> - Enterprise Technology Research, Brooklyn, NY
           <p>June - Sep. 2018</p>

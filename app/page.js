@@ -8,7 +8,6 @@ import ContactForm from './components/contactform';
 import Footer from './components/footer';
 import Navbar from './components/Navbar'; // Ensure this path is correct
 
-
 const useTypingEffect = (text, duration, isTypeByLetter = false) => {
   const [currentPosition, setCurrentPosition] = useState(0);
   const items = isTypeByLetter ? text.split('') : text.split(' ');

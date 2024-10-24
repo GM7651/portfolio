@@ -1,33 +1,71 @@
-"use client";
-
-import React from 'react';
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
+  const form = useRef();
+  const [messageSent, setMessageSent] = useState(false); // State to track message sent status
+  const [errorMessage, setErrorMessage] = useState(false); // State to track errors
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_63pci9l", // Your EmailJS Service ID
+        "template_sgr5ivq", // Your EmailJS Template ID
+        form.current,
+        "rFwlnYhABQ_4bDh_a" // Your EmailJS User ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("Message sent successfully!");
+          setMessageSent(true); // Set messageSent to true when email is successfully sent
+          setErrorMessage(false); // Reset error message if it was set before
+          form.current.reset(); // Reset form after submission
+        },
+        (error) => {
+          console.log(error.text);
+          setErrorMessage(true); // Set errorMessage if something goes wrong
+        }
+      );
+  };
+
   return (
-    <section id="contact" className="relative w-full min-h-screen mt-32 text-red-500">
-      <div className="my-6">
+    <section id="contact" className="relative w-full min-h-screen mt-32">
+      <div className= "">
+      <p className='text-4xl text-center tracking-widest mt-12 uppercase text-[#5651e5]'>
+          Get In Touch
+        </p>
+        </div>
+      <div className="my-16">
         <div className="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md text-[#333] font-[sans-serif]">
           <div>
-            <h1 className="text-3xl font-extrabold">Let&apos;sTalk</h1>
-            <p className="text-sm text-gray-400 mt-3">
-            Thank you for visiting my portfolio! I&apos;m excited to hear from you. Whether you have a project in mind, a question, 
-            or just want to connect, feel free to drop me a message. I&apos;ll get back to you as soon as possible!
-            </p>
+            <h1 className="text-3xl font-extrabold">Let's Connect</h1>
+            
             <div className="mt-12">
               <h2 className="text-lg font-extrabold">Email</h2>
               <ul className="mt-3">
                 <li className="flex items-center">
                   <div className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff' viewBox="0 0 479.058 479.058">
-                      <path d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      height="20px"
+                      fill="#007bff"
+                      viewBox="0 0 479.058 479.058"
+                    >
+                      <path
+                        d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"
+                      />
                     </svg>
                   </div>
-                  <a 
-                    href="mailto:gerimato1234@gmail.com"
+                  <a
+                    href="mailto:Gerimato1234@gmail.com"
                     className="text-[#007bff] text-sm ml-3"
                   >
                     <small className="block">Mail</small>
-                    <strong>gerimato1234@gmail.com</strong>
+                    <strong>Gerimato1234@gmail.com</strong>
                   </a>
                 </li>
               </ul>
@@ -35,7 +73,7 @@ const ContactForm = () => {
             <div className="mt-12">
               <h2 className="text-lg font-extrabold">Socials</h2>
               <ul className="flex mt-3 space-x-4">
-                <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+              <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                   <a 
                     href="https://www.linkedin.com/in/gerimato/"
                     target="_blank" // Opens the link in a new tab
@@ -52,7 +90,7 @@ const ContactForm = () => {
                       <path d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"/>
                     </svg>
                   </a>
-                </li>
+                </li> 
                 <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                   <a 
                     href="https://github.com/GM7651"
@@ -76,39 +114,62 @@ const ContactForm = () => {
                     </svg>
                   </a>
                 </li>
-              </ul>
+
+                </ul>
             </div>
           </div>
 
           {/* Contact Form */}
-          <form className="ml-auto space-y-4">
+          <form ref={form} onSubmit={sendEmail} className="ml-auto space-y-4">
             <input
               type="text"
+              name="user_name"
               placeholder="Name"
               className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
+              required
             />
             <input
               type="email"
+              name="user_email"
               placeholder="Email"
               className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
+              required
             />
             <input
               type="text"
+              name="subject"
               placeholder="Subject"
               className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
+              required
             />
             <textarea
+              name="message"
               placeholder="Message"
               rows="6"
               className="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#007bff]"
+              required
             ></textarea>
             <button
-              type="button"
+              type="submit"
               className="text-white bg-[#007bff] hover:bg-blue-600 font-semibold rounded-md text-sm px-4 py-2.5 w-full"
             >
               Send
             </button>
           </form>
+
+          {/* Success Message */}
+          {messageSent && (
+            <p className="text-green-500 text-lg mt-4">
+              Message sent successfully!
+            </p>
+          )}
+
+          {/* Error Message */}
+          {errorMessage && (
+            <p className="text-red-500 text-lg mt-4">
+              There was an error sending your message. Please try again.
+            </p>
+          )}
         </div>
       </div>
     </section>
