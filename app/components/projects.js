@@ -12,7 +12,7 @@ const projectData = [
 
   },
   {
-    title: 'Project Two',
+    title: 'Moller',
     imgSrc: '/assets/moller_project.png',
     link: 'https://mollerz.vercel.app/',
     techIcons: ['/skills/html.png', '/skills/javascript.png','/skills/tailwind.png'], // No Tailwind for Project Two
@@ -20,7 +20,7 @@ const projectData = [
 
   },
   {
-    title: 'Project Three',
+    title: 'Dashed Board',
     imgSrc: '/assets/dash_project.png',
     link: 'https://dashboard-phi-three-46.vercel.app/',
     techIcons: ['/skills/html.png', '/skills/javascript.png', '/skills/tailwind.png'], 
@@ -28,9 +28,9 @@ const projectData = [
 
   },
   {
-    title: 'Project Three',
-    imgSrc: '/assets/dash_project.png',
-    link: 'https://dashboard-phi-three-46.vercel.app/',
+    title: 'Sinani Plumbing & Heating ',
+    imgSrc: '/assets/sinani_project.png',
+    link: 'https://vercel.com/api/toolbar/link/pluming-gary-s-projects-60564699.vercel.app?via=project-dashboard-alias-list&p=1&page=/',
     techIcons: ['/skills/html.png', '/skills/javascript.png', '/skills/tailwind.png'], 
     githubLink: 'https://github.com/GM7651/Dashboard', // Add GitHub link
 
