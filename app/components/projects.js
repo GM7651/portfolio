@@ -30,7 +30,7 @@ const projectData = [
   {
     title: 'Sinani Plumbing & Heating ',
     imgSrc: '/assets/sinani_project.png',
-    link: 'https://vercel.com/api/toolbar/link/pluming-gary-s-projects-60564699.vercel.app?via=project-dashboard-alias-list&p=1&page=/',
+    link: 'https://sinaniphcorp.org/',
     techIcons: ['/skills/html.png', '/skills/javascript.png', '/skills/tailwind.png'], 
     githubLink: 'https://github.com/GM7651/Dashboard', // Add GitHub link
 
