@@ -298,7 +298,62 @@ const Resume = () => {
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">Work Experience</h2>
 
+
       <div className="mb-4 flex justify-between">
+        <div>
+          <h3 className="font-bold text-lg">
+          Web Development Intern - PlayWebTherapy, Remote           
+          </h3>
+          <p className="text-gray-700">Role: Full-Stack Developer</p>
+          <p className="text-gray-500">
+            <time dateTime="2024-05">December 2024</time> – Present
+          </p>
+          <ul className="list-disc ml-5">
+            <li>
+            Implemented TypeScript form validation for client and therapist account forms, ensuring correct input for age and addresses (street, city, state, zip).
+            </li>
+            <li>
+            Standardized and updated address data in MongoDB, ensuring consistency across the database.
+            </li>
+            <li>
+            Customized cursor lock functionality in the game interface, displaying a custom sign at the center.
+            </li>
+            <li>
+            Refined UI elements on the therapist homepage, improving button alignment and hiding features for beta testing.
+            </li>
+            <li>
+            Resolved code generation errors to ensure correct subtraction during therapist code creation.
+            </li>
+            <li>
+            Optimized website responsiveness, ensuring full compatibility across desktop, tablet, and mobile screens.            
+            </li>
+            <li>
+            Edited API routes to manage form submissions and MongoDB updates, improving data integrity and user experience.            
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div className="mb-4 flex justify-between">
+  <div>
+    <h3 className="font-bold text-lg">Data Collection Intern</h3>
+    <p className="text-gray-700">Enterprise Technology Research, Brooklyn, NY</p>
+    <p className="text-gray-500">
+      <time dateTime="2018-06">June 2018</time> – <time dateTime="2018-09">Sep. 2018</time>
+    </p>
+    <ul className="list-disc ml-5">
+      <li>Managed and organized a database of 400 potential clients using Microsoft Excel, ensuring data accuracy and consistency.</li>
+      <li>Performed data entry and validation to maintain up-to-date information, contributing to a 20% improvement in outreach efficiency.</li>
+      <li>Analyzed client data to identify patterns and trends, providing insights that informed marketing and sales strategies.</li>
+      <li>Collaborated with team members to streamline data collection processes, reducing data entry errors by 15%.</li>
+    </ul>
+  </div>
+</div>
+
+
+
+  <div className="mb-4 flex justify-between">
   <div>
     <h3 className="font-bold text-lg">Concierge</h3>
     <p className="text-gray-700">172 Madison, Manhattan, NY</p>
@@ -328,56 +383,10 @@ const Resume = () => {
 </div>
 
 
-<div className="mb-4 flex justify-between">
-  <div>
-    <h3 className="font-bold text-lg">Data Collection Intern</h3>
-    <p className="text-gray-700">Enterprise Technology Research, Brooklyn, NY</p>
-    <p className="text-gray-500">
-      <time dateTime="2018-06">June 2018</time> – <time dateTime="2018-09">Sep. 2018</time>
-    </p>
-    <ul className="list-disc ml-5">
-      <li>Managed and organized a database of 400 potential clients using Microsoft Excel, ensuring data accuracy and consistency.</li>
-      <li>Performed data entry and validation to maintain up-to-date information, contributing to a 20% improvement in outreach efficiency.</li>
-      <li>Analyzed client data to identify patterns and trends, providing insights that informed marketing and sales strategies.</li>
-      <li>Collaborated with team members to streamline data collection processes, reducing data entry errors by 15%.</li>
-    </ul>
-  </div>
-</div>
 
 
-<div className="mb-4 flex justify-between">
-        <div>
-          <h3 className="font-bold text-lg">
-            Play Therapy Web (Client Project)
-          </h3>
-          <p className="text-gray-700">Role: Full-Stack Developer</p>
-          <p className="text-gray-500">
-            <time dateTime="2024-05">May 2024</time> – Present
-          </p>
-          <ul className="list-disc ml-5">
-            <li>
-              Developed a responsive and user-friendly therapist dashboard using
-              Next.js, React, and Tailwind CSS.
-            </li>
-            <li>
-              Implemented secure form submission with Zod validation for
-              therapist data collection, ensuring data integrity and accuracy.
-            </li>
-            <li>
-              Integrated MongoDB (Mongoose) for data persistence, enabling
-              real-time storage and retrieval of therapist and session data.
-            </li>
-            <li>
-              Created dynamic session tracking with API routes, allowing
-              therapists to manage sessions efficiently.
-            </li>
-            <li>
-              Collaborated with the client to deliver seamless user
-              authentication using NextAuth.js.
-            </li>
-          </ul>
-        </div>
-      </div>
+
+
 
 
 <div className="mb-6">

@@ -102,6 +102,44 @@ export default function Skills() {
               </div>
             </div>
           </div>
+
+          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='m-auto'>
+              <Image src='/skills/mongodb.png' width={64} height={64} alt='Next.js Logo' />
+
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <h3>MongoDB</h3>
+              </div>
+            </div>
+          </div>
+
+          
+          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='m-auto'>
+              <Image src='/skills/NextAuth.png' width={64} height={64} alt='Next.js Logo' />
+
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <h3>NextAuth</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+            <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+              <div className='m-auto'>
+              <Image src='/skills/Api.png' width={64} height={64} alt='Next.js Logo' />
+
+              </div>
+              <div className='flex flex-col items-center justify-center'>
+                <h3>API</h3>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

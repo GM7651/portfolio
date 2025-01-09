@@ -8,6 +8,7 @@ import ContactForm from './components/contactform';
 import Footer from './components/footer';
 import Navbar from './components/Navbar'; // Ensure this path is correct
 
+
 const useTypingEffect = (text, duration, isTypeByLetter = false) => {
   const [currentPosition, setCurrentPosition] = useState(0);
   const items = isTypeByLetter ? text.split('') : text.split(' ');
@@ -109,11 +110,9 @@ function Home() {
           <div className="bg-white p-7 rounded-md">
             <h1 className="text-xl text-blue-400 mb-4">About me</h1>
             <p className="text-base sm:text-lg md:text-xl text-black mb-6">
-              I am a passionate full-stack developer with knowledge in JavaScript, Next.js, Tailwind CSS, and AWS. 
-              Currently pursuing a Bachelor of Science in Computer Information Systems at Brooklyn College, I have hands-on experience in building responsive, 
-              user-friendly web applications and websites. My portfolio showcases projects like a local carwash business website and a gym membership management system, where I’ve applied modern UX/UI principles, 
-              SEO strategies, and secure payment integrations. With fluency in English and Albanian, I am committed to delivering innovative solutions and 
-              continuously improving my technical skills.
+            Hi, I'm Geri Mato, a passionate full-stack developer specializing in building responsive, user-friendly web applications. With a Bachelor of Science in Computer Information Systems,
+             I bring expertise in modern technologies like JavaScript, Next.js, Tailwind CSS, MongoDB, Zod, Stripe, and NextAuth.js.  I&apos;m committed to delivering innovative solutions that combine strong technical foundations with an excellent 
+             user experience I thrive in collaborative environments and continuously strive to improve my skills to tackle new challenges.
             </p>
           </div>
         </div>
